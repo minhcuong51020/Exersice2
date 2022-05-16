@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../icon/fontawe/css/all.min.css">
+    <link rel="stylesheet" href="../css/astyle.css">
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery.slim.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header-admin">
+        <!-- desktop -->
+        <div class="d-none d-sm-none d-md-none d-lg-block container-fluid pl-0 pr-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="adminmanage.html">
+                    <img src="/img/logo.png" alt="" style="width: 200px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="adminmanage.html">Trang chủ</a>
+                        </li>
+                    </ul>
+                    <div class="my-2 my-lg-0 dropdown user">
+                        <a class="nav-link dropdown-toggle" href="#" id="info-user" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            <img src="/img/avatar.jpg" alt="" style="height: 35; width: 35px;"> 
+                            Cường
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="info-user">
+                            <a class="dropdown-item" href="#">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- mobile -->
+        <div class="d-md-block d-lg-none container-fluid pl-0 pr-0 shadow header-admin-mobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo.png" alt="" style="width: 200px;">
+                </a>
+                <div class="my-md-0 dropdown user">
+                    <a class="nav-link dropdown-toggle" href="#" id="info-user" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <img src="/img/avatar.jpg" alt="" style="height: 35; width: 35px;"> 
+                        Cường
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="info-user">
+                        <a class="dropdown-item" href="#">Đăng xuất</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collpase-mobile" aria-controls="collpase-mobile" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collpase-mobile">
+                    <ul class="navbar-nav ul-all">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#company-admin" data-toggle="collapse" aria-expanded="false">
+                                Nhà cung cấp</a>
+                            <ul class="collapse" id="company-admin">
+                                <li class="nav-item">
+                                    <a href="companyadd.html" class="nav-link">Thêm nhà cung cấp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="companylist.html" class="nav-link">Danh sách nhà cung cấp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product-admin" data-toggle="collapse" aria-expanded="false">
+                                Sản phẩm</a>
+                            <ul class="collapse" id="product-admin">
+                                <li class="nav-item">
+                                    <a href="productadd.html" class="nav-link">Thêm sản phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productlist.html" class="nav-link">Danh sách sản phẩm</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#category-admin" data-toggle="collapse" aria-expanded="false">
+                                Danh mục sản phẩm</a>
+                            <ul class="collapse" id="category-admin">
+                                <li class="nav-item">
+                                    <a href="categoryadd.html" class="nav-link">Thêm danh mục</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="categorylist.html" class="nav-link">Danh sách danh mục</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slider-admin" data-toggle="collapse" aria-expanded="false">Thanh
+                                trượt</a>
+                            <ul class="collapse" id="slider-admin">
+                                <li class="nav-item">
+                                    <a href="silderadd.html" class="nav-link">Thêm thanh trượt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sliderlist.html" class="nav-link">Danh sách thanh trượt</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-admin">
+        <div class="container-fluid pl-0 pr-0">
+            <div class="row no-gutters">
+                <div class="d-none d-lg-block col-lg-3 p-4">
+                    <ul class="navbar-nav ul-all">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#company-admin" data-toggle="collapse" aria-expanded="false">
+                                Nhà cung cấp</a>
+                            <ul class="collapse" id="company-admin">
+                                <li class="nav-item">
+                                    <a href="companyadd.html" class="nav-link">Thêm nhà cung cấp</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="companylist.html" class="nav-link">Danh sách nhà cung cấp</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product-admin" data-toggle="collapse" aria-expanded="false">
+                                Sản phẩm</a>
+                            <ul class="collapse" id="product-admin">
+                                <li class="nav-item">
+                                    <a href="productadd.html" class="nav-link">Thêm sản phẩm</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productlist.html" class="nav-link">Danh sách sản phẩm</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#category-admin" data-toggle="collapse" aria-expanded="false">Danh
+                                mục sản phẩm</a>
+                            <ul class="collapse" id="category-admin">
+                                <li class="nav-item">
+                                    <a href="categoryadd.html" class="nav-link">Thêm danh mục</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="categorylist.html" class="nav-link">Danh sách danh mục</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slider-admin" data-toggle="collapse" aria-expanded="false">Thanh
+                                trượt</a>
+                            <ul class="collapse" id="slider-admin">
+                                <li class="nav-item">
+                                    <a href="silderadd.html" class="nav-link">Thêm thanh trượt</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="sliderlist.html" class="nav-link">Danh sách thanh trượt</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Content right -->
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 min-vh-100 content-right">
+                    <div class="list-item ml-2 mr-2 mt-2">
+                        <h4 class="title-crud">Danh sách nhà cung cấp</h4>
+                        <div class="table-all table-responsive" style="background-color: #fff;">
+                            <table class="table table-striped mb-0 border-bottom">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Tên</th>
+                                        <th>Loại hình kinh doanh</th>
+                                        <th>Năm thành lập</th>
+                                        <th>Trụ sở chính</th>
+                                        <th>Số nhân viên</th>
+                                        <th><i class="fas fa-cog"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>NXB kim đồng</td>
+                                        <td>Nhà xuất bản</td>
+                                        <td>2005</td>
+                                        <td>Hà Nội</td>
+                                        <td>120</td>
+                                        <td>
+                                            <div style="width: 70px;">
+                                                <a href="#" class="edit-table">Sửa</a>
+                                                <a>||</a>
+                                                <a href="#" class="delete-table">Xóa</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>NXB Thanh Niên</td>
+                                        <td>Nhà xuất bản</td>
+                                        <td>1955</td>
+                                        <td>Hà Nội</td>
+                                        <td>250</td>
+                                        <td>
+                                            <div style="width: 70px;">
+                                                <a href="#" class="edit-table">Sửa</a>
+                                                <a>||</a>
+                                                <a href="#" class="delete-table">Xóa</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>NXB Đà Đẵng</td>
+                                        <td>Nhà xuất bản</td>
+                                        <td>1984</td>
+                                        <td>Đà Nẵng</td>
+                                        <td>210</td>
+                                        <td>
+                                            <div style="width: 70px;">
+                                                <a href="#" class="edit-table">Sửa</a>
+                                                <a>||</a>
+                                                <a href="#" class="delete-table">Xóa</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- content right end -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-admin">
+
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
